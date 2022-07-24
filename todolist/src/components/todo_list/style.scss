@@ -1,0 +1,18 @@
+.wrapper{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+@media screen and (max-width:1220px) {
+    .wrapper{
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .wrapper{
+        justify-content: center;
+    }
+}

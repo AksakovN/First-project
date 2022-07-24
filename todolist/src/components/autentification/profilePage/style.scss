@@ -1,0 +1,31 @@
+.profilePage{
+    margin: auto;
+    padding-top: 60px;
+    width: 1200px;
+    height: 100vh;
+    background-image: url(../../image/background.png);
+    background-repeat: no-repeat;
+    background-position: top -40px right;
+    background-size: cover;
+    .profileBody{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+        .imgPart{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .profImage{
+                background-image: url(../../image/user.png);
+                background-size: cover;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+}

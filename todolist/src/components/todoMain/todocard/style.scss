@@ -1,0 +1,139 @@
+.todo {
+    width: 300px;
+    margin: 20px 40px;
+    min-height: max-content;
+    background: rgb(126, 126, 126);
+    background: linear-gradient(180deg, rgba(126, 126, 126, 1) 0%, rgba(65, 65, 65, 0.3169642857142857) 50%, rgba(126, 126, 126, 1) 100%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px 2px black;
+
+    .todoName {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 3px;
+
+        [type=text] {
+            width: 240px;
+            height: 30px;
+            border-radius: 2px;
+            outline: none;
+            border: none;
+            text-align: center;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1) rotateZ(10deg);
+            }
+        }
+    }
+
+    textarea {
+        margin: 10px 0;
+        width: 99%;
+        min-height: 50px;
+        resize: none;
+        border-radius: 2px;
+        outline: none;
+        border: 1px solid grey;
+        overflow: hidden;
+    }
+
+    .dateHolder {
+        width: 100%;
+        min-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .to {
+            .toDate {
+                position: relative;
+
+                .toDateText {
+                    width: 100px;
+                    position: absolute;
+                    top: -18px;
+                    left: 0;
+                    font-weight: 700;
+                }
+            }
+
+            .toDateChange {
+                display: none;
+            }
+        }
+
+        .from {
+            img {
+                display: none;
+                width: 30px;
+                height: 30px;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1) rotateZ(10deg);
+                }
+            }
+
+            .lastDate {
+                position: relative;
+
+                .toDateText {
+                    width: 100px;
+                    position: absolute;
+                    top: -18px;
+                    left: 0;
+                    font-weight: bold;
+
+                }
+            }
+        }
+    }
+
+    .apply {
+        width: 100%;
+        height: max-content;
+        display: none;
+        justify-content: center;
+        position: relative;
+
+        .errorMsg {
+            display: none;
+            width: 84px;
+            position: absolute;
+            background-color: #fff;
+            top: 22px;
+            left: 35%;
+            border: 2px solid red;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        [type=button] {
+            width: 80px;
+            height: 20px;
+            outline: none;
+            border: 1px solid black;
+            border-radius: 4px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+// @media screen and (max-width:1220px) {
+//     .todo{
+//         // margin-left: 60px;
+//     }
+// }

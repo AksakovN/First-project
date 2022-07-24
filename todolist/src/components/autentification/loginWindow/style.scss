@@ -1,0 +1,111 @@
+.loginModal{
+    z-index: 10;
+    position: fixed;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 500px;
+    height: 400px;
+    background-image: url(../../image/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .exitCreate{
+        width: 100%;
+        height: max-content;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        button{
+            font-weight: 700;
+            width: 40px;
+            &:hover{
+                transform: scale(1.1);
+                background-color: rgba(250, 11, 11, 0.726);
+            }
+        }
+    }
+    h2{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .loginModalInput{
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: 23px;
+        display: flex;
+        justify-content: space-around;
+        h2{
+            width: 200px;
+            margin: 0;
+        }
+        input{
+            width: 200px;
+            height: 27px;
+        }       
+    }
+    .regModalInput{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .loginModalFooter{
+        margin-top: 40px;
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        .loginRegister{
+            display: flex;
+            flex-direction: column;
+            a{
+                margin-top: 10px;
+                text-decoration: dashed;
+                color: rgb(131, 7, 7);
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .loginB{
+            position: relative;
+            .errorMsgCreate{
+                display: none;
+                width: 115px;
+                position: absolute;
+                background-color: #fff;
+                top: 35px;
+                border: 2px solid red;
+                text-align: center;
+                border-radius: 10px;
+            }
+            button{
+                width: 120px;
+                height: 30px;
+                outline: none;
+                    border: 1px solid black;
+                    border-radius: 4px;
+                    font-size: 20px;
+                    &:hover{
+                        transform: scale(1.1);
+                        background-color: rgba(5, 185, 5, 0.705);
+                    }
+            }
+        }
+        
+    }
+    
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.274);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
