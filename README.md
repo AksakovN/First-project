@@ -1,4 +1,4 @@
-# Project created on React framework v.8.6.0.
+# Project created on React framework v.18.0.0.
 
 # Server part for project was written in PHP.
 
